@@ -6,8 +6,8 @@ sudo yum install -y\
   wget curl  automake gcc gcc-c++ patch \
   glibc-static libstdc++-static
 
-sudo yum install centos-release-scl-rh
-sudo yum install devtoolset-3-gcc devtoolset-3-gcc-c++
+sudo yum install -y centos-release-scl-rh
+sudo yum install -y devtoolset-3-gcc devtoolset-3-gcc-c++
 sudo update-alternatives --install /usr/bin/gcc-4.9 gcc-4.9 /opt/rh/devtoolset-3/root/usr/bin/gcc 10
 sudo update-alternatives --install /usr/bin/g++-4.9 g++-4.9 /opt/rh/devtoolset-3/root/usr/bin/g++ 10
 scl enable devtoolset-3 bash
